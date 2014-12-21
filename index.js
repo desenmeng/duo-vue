@@ -10,7 +10,7 @@
  */
 
 var compiler = require('vue-component-compiler');
-var fs = require('fs');
+var read = require("fs").readFileSync;
 
 /**
  * Expose `plugin`
@@ -27,14 +27,12 @@ module.exports = plugin;
  * @api public
  */
 
-function plugin(opts) {
-  opts = opts || {};
-  var type = opts.type || 'vue';
+function plugin() {
   return function duovue(file, duo, done) {
-    if (file.type != type) return;
-    var content = fs.readFileSync(file.path, 'utf-8');
+    if (file.type !== 'vue') return;
+    var content = read(file.path, 'utf-8');
     compiler.compile(content, function (err, result) {
-      if (err) return;
+      if (err) return done(err);
       file.type = 'js';
       file.src = result;
       done(null, file);
