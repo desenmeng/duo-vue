@@ -1,0 +1,28 @@
+{
+  "name": "duo-vue",
+  "version": "0.0.1",
+  "description": "Vue plugin for Duo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demohi/duo-vue.git"
+  },
+  "keywords": [
+    "duo",
+    "vue",
+    "vuejs",
+    "vueify"
+  ],
+  "author": "mdemo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demohi/duo-vue/issues"
+  },
+  "homepage": "https://github.com/demohi/duo-vue",
+  "dependencies": {
+    "vue-component-compiler": "^1.1.0"
+  }
+}
