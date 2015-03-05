@@ -37,6 +37,7 @@ duo.run(function (err, file) {
 });
 ```
 
+
 [npm-image]: https://img.shields.io/npm/v/duo-vue.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/duo-vue
 [travis-image]: https://img.shields.io/travis/demohi/duo-vue/master.svg?style=flat-square
